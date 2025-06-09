@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.diagnostic-reports/
+
+# Node.js
+# /node_modules
+node_modules/
+# /dist
+dist/
+# /build (for Vite build output)
+build/
+
+# Runtime data
+*.rs
+*.tgz
+.npm/
+.yarn-cache/
+.pnpm-store/
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Optional files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Vite specific
+.vite/
