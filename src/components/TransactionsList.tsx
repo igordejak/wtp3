@@ -1,5 +1,5 @@
 // src/components/TransactionsList.tsx
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import styles from './TransactionsList.module.scss';
 import { db } from '../database'; // Імпортуємо екземпляр бази даних Dexie
 import type { MoneyTransaction, ItemTransaction, StuffItem } from '../database/models';
