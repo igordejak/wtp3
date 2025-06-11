@@ -1,24 +1,14 @@
-
-import './App.module.scss'
-import AddTransactionForm from './components/AddTransactionForm'; // <--- Імпортуємо нову форму
-import TransactionsList from './components/TransactionsList';
-
+import styles from "./App.module.scss";
+import AddTransactionForm from "./components/AddTransactionForm"; // <--- Імпортуємо нову форму
+import TransactionsList from "./components/TransactionsList";
 
 function App() {
-  
-
   return (
-<>
-     
+    <div className={styles.wrapper}>
+      <TransactionsList />
       <AddTransactionForm />
-
-       <div style={{ marginTop: '40px' }}>
-        <h2>Мої транзакції</h2>
-       
-        <TransactionsList />
-      </div>
-</>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

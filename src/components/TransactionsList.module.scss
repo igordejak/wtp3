@@ -1,0 +1,111 @@
+.actionRow {
+
+    &:nth-child(even) {
+        background: #6F6F6F;
+    }
+
+    &:nth-child(odd) {
+        background: #404040;
+    }
+
+    .partOne {
+        display: flex;
+        padding: 0 5px;
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        cursor: pointer;
+
+        .lendType {
+            width: 36px;
+            margin-right: 5px;
+            flex-shrink: none;
+        }
+
+        .summItem {
+            border-right: 1px solid #9F9F9F;
+            padding-right: 5px;
+            margin-right: 10px;
+            min-width: 70px;
+        }
+
+        .nameOf {
+            padding-right: 5px;
+            flex-grow: 1;
+            b {
+            font-weight: 500;
+        }
+        }
+
+        button {
+            height: 30px;
+            line-height: 25px;
+            padding: 0 5px;
+            align-self: center;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 0;
+            background: #9F9F9F;
+            cursor: pointer;
+
+            &:hover {
+                color: #fff;
+                background: #FF7F3E;
+            }
+        }
+    }
+    .details  {
+    border-top: 1px solid #9F9F9F;
+    p {
+        padding: 0 5px 10px;
+        color: #fff;
+        font-weight: 300;
+    }
+    }
+}
+.section {
+    border-bottom: 1px solid #2A629A;
+}
+.totalIn {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+
+    b {
+        font-weight: 500;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #6eda87;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.totalOut {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+
+    b {
+        font-weight: 500;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #FF7F3E;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+}

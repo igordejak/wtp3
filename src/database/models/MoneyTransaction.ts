@@ -8,4 +8,5 @@ export interface MoneyTransaction {
   description?: string | null; // Опис транзакції (опціонально), додано null для узгодженості
   stuffItemId: number; // ID пов'язаної речі/людини, тепер це число (як ID в Dexie)
   returnDate?: number | null; // Опціональна дата повернення, зберігається як Unix timestamp (число)
+  currency: string;
 }

@@ -1,66 +1,51 @@
-/* src/components/AddTransactionForm.module.scss */
-
 .formContainer {
   display: flex;
   flex-direction: column;
-  gap: 15px; // Відстань між елементами форми
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  gap: 15px;
+  max-width: 460px;
+  margin: 40px auto 20px;
+  padding: 0 20px 20px;
+  border: 0;
+  border-radius: 8px; 
+  background-color: #6F6F6F;
+  color: #fff;
+  button {
+    height: 40px;
+    line-height: 25px;
+    background: #6eda87;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
-h3 {
-  color: #333;
-  margin-bottom: 10px; // Відступ після заголовка
-}
+.fieldBlock {
+  label {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-weight: 300;
 
-.formGroup {
-  display: flex;
-  align-items: center; // Вирівнювання елементів по центру
-  margin-bottom: 15px; // Відступ між групами полів
-}
+    input {
+      flex-grow: 1;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+      border-radius: 4px;
+      border: 0;
+    }
+    select {
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+      font-size: 15px;
+      border-radius: 4px;
+      border: 0;
+    }
+  }
 
-.formGroup label {
-  font-weight: bold;
-  color: #555;
-  min-width: 120px; // Забезпечуємо мінімальну ширину для міток
-  margin-right: 10px; // Відступ між міткою та полем вводу
-}
-
-.formGroup input[type="text"],
-.formGroup input[type="number"],
-.formGroup input[type="date"],
-.formGroup select {
-  flex-grow: 1; // Дозволяє полю займати весь доступний простір
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box; // Включаємо padding і border в ширину
-}
-
-.selectInput {
-  margin-left: 10px; // Залишаємо цей відступ тут, якщо потрібно, щоб селекти були відступлені від міток
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  background-color: #007bff; // Синій колір для кнопки
-  color: white;
-  transition: background-color 0.3s ease; // Плавний перехід при ховері
-}
-
-.button:hover {
-  background-color: #0056b3; // Темніший синій при наведенні
 }

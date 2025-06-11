@@ -4,6 +4,7 @@
 export interface MoneyTransaction {
   id?: number; // 'id' є необов'язковим, оскільки Dexie генерує його автоматично
   amount: number;
+  currency: string,
   type: 'lend' | 'borrow';
   date: number; // Зберігаємо як timestamp (число)
   description?: string | null;
