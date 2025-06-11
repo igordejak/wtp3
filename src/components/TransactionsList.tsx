@@ -1,5 +1,5 @@
 // src/components/TransactionsList.tsx
-import React, { useState, useMemo } from 'react';
+import React, { useState,   useMemo } from 'react';
 import styles from './TransactionsList.module.scss';
 import { db } from '../database'; // Імпортуємо екземпляр бази даних Dexie
 import type { MoneyTransaction, ItemTransaction, StuffItem } from '../database/models';
@@ -225,7 +225,7 @@ const TransactionsList: React.FC = () => {
 
       {/* Повідомлення, якщо транзакцій немає */}
       {moneyTransactions.length === 0 && itemTransactions.length === 0 && (
-        <p>Поки що немає записів. Додайте перший!</p>
+        <p className={styles.noRecords}>Поки що немає записів. Додайте перший!</p>
       )}
 
       {/* Секція "Гроші, які мені винні" */}
