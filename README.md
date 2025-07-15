@@ -1,54 +1,35 @@
-# React + TypeScript + Vite
+This intuitive web application is designed for easy and efficient tracking of all your lent money and items. Forget about forgotten debts and loans – "My Debts & Loans" helps you always know who owes what to whom.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key Features (Version 1.0):
 
-Currently, two official plugins are available:
+- **Flexible Transaction Entry:** Quickly record both monetary loans/debts and lent item tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multi-Currency Support:** Add money transactions in different currencies (UAH, USD, EUR) with automatic sum calculation for each currency.
 
-## Expanding the ESLint configuration
+- **Convenient Overview:** Transactions are automatically sorted into four distinct categories:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  - Money owed to you
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  - Money you owe
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  - Items owed to you
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  - Items you owe
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+**Click for Details:** Expand each entry to view additional information, such as description and return date.
+
+**Easy Deletion:** Delete outdated or settled transactions with confirmation.
+
+**Local Data Storage:** All your data is securely stored directly in your browser, ensuring full privacy without the need for cloud services or registration.
+
+## Technologies Used:
+
+React: A modern library for building user interfaces.
+
+Vite: A fast build tool for frontend development.
+
+Dexie.js: A convenient wrapper around IndexedDB for working with local databases in the browser.
+
+TypeScript: Adds static typing for more reliable and scalable code.
+
+*This proect created with help of Gemini AI and combined vibe-coding and problem solving approaches*
