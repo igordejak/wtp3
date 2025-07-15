@@ -1,5 +1,4 @@
-This intuitive web application is designed for easy and efficient tracking of all your lent money and items. Forget about forgotten debts and loans – "My Debts & Loans" helps you always know who owes what to whom.
-
+This intuitive web application is designed for easy and efficient tracking of all your lent money and items. 
 ## Key Features (Version 1.0):
 
 - **Flexible Transaction Entry:** Quickly record both monetary loans/debts and lent item tracking.
