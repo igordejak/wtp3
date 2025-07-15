@@ -31,4 +31,4 @@ Dexie.js: A convenient wrapper around IndexedDB for working with local databases
 
 TypeScript: Adds static typing for more reliable and scalable code.
 
-*This proect created with help of Gemini AI and combined vibe-coding and problem solving approaches*
+*This proect created with help of Gemini AI and combine vibe-coding and problem solving approaches*
